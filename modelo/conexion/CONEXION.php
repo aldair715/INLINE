@@ -4,8 +4,8 @@ abstract class Conexion{
     //definimos atributos de la conexion
     private static $db_host="localhost";
     private static $db_user="root";
-    private static $db_password="";
-    protected $db_name="inline";
+    private static $db_password="Nitro0Air";
+    protected $db_name="inline_proyecto";
     private static $db_charset="utf8";
     private $connection;
     protected $query;
@@ -46,7 +46,8 @@ abstract class Conexion{
         $resultado=$this->connection->query($this->query);
         while( $this->filas[]=$resultado->fetch_assoc() );
         $resultado->close();
-        $this->db_close();  
-        return $this->filas;
+        $this->db_cerrar();  
+        return array_pop($this->filas);
     }
 }
+?>

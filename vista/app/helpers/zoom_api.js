@@ -1,5 +1,5 @@
 const NAME_URL="api.zoom.us",
-NAME="zoom",
+NAME="INLINE",
 DOMAIN=`https://${NAME_URL}.com/`,
 API=`${DOMAIN}/v2`,
 USER=`me`,

@@ -4,16 +4,44 @@ export function menu()
     $menu=D.createElement("nav");
     $menu.classList.add("menu");
     $menu.innerHTML=`
-        <a href="#">INICIO</a>
-        <a href="#/search_doctor">BUSCAR DOCTOR</a>
-        <a href="#/search_especialidad">BUSCAR ESPECIALIDAD</a>
-        <a href="#/mostrarFormulario">Formulario</a>
-        <a href="#/registrarMedicamento">Registrar Medicamento</a>
-        <a href="#/registrarReceta">Registrar Receta</a>
-        <a href="#/registrarDoctor">Registrar Doctor</a>
-        <a href="#/registrarPaciente">Registrar Paciente</a>
-        <a href="#/registrarUsuario">Registrar Usuario</a>
-        <a href="#/registrarAntecedente">Registrar Antecedente</a>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+    <a class="navbar-brand" href="#">INLINE</a>
+  
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+         <a href="#">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a href="#/search_doctor">BUSCAR DOCTOR</a>
+        </li>
+      
+        <li class="nav-item">
+          
+        </li>
+
+        <li class="nav-item">
+          <a href="#/registrarReceta">Registrar Receta</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="#/registrarAntecedente">Registrar Antecedente</a>
+        </li>
+
+       
+        <li class="nav-item">
+          <a href="#/mostrarAntecedente">Mostrar Paciente</a>
+        </li>
+      </ul>
+    </div>
+  </nav>  
     `;
     return $menu;
 }
